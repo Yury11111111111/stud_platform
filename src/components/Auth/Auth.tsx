@@ -45,7 +45,7 @@ export default function Auth() {
                 <img className='header__red-paper header-paper' src={red_paper} alt="Red Paper" />
                 <img className='header__logo' src={logo} alt="Logo" />
             </header>
-            <Content className="content">
+            <Content className="auth-content">
                 <h3 className='content__title'>Личный кабинет</h3>
                 <div className='content__inputs'>
                     <Input

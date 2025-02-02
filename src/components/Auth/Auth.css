@@ -64,7 +64,7 @@ body {
 
 /* content */
 
-.content {
+.auth-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -75,9 +75,10 @@ body {
 
 .content__title {
     font-weight: 800;
-    font-style: normal;
     text-align: center;
+    margin-top: 20%;
     margin-bottom: 4%;
+    height: 10%;
 }
 
 #red-border {
