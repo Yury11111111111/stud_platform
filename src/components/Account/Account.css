@@ -3,7 +3,7 @@
 }
 
 header {
-    margin: 5% 4% 2% 4%;
+    margin: 5% 4%;
 }
 
 .header__title {
@@ -20,7 +20,7 @@ header {
 }
 
 .account-content {
-    height: 85vh;
+    height: 82vh;
     margin: 0 4%;
     font-family: "Montserrat", serif;
     display: grid;
@@ -156,15 +156,18 @@ header {
 
 nav {
     width: 90%;
-    margin: 0 auto;
 }
 
 nav ul {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     font-size: 12px;
-    margin: 6% 0;
+    margin: 1% 0;
+    bottom: 0;
+    right: 5%;
+    left: 5%;
 }
 
 li {
@@ -179,3 +182,16 @@ li img {
 .nav__selected {
     color: #860000;
 }
+
+.svg {
+    height: 35px;
+}
+
+.selected-fill-svg {
+    fill: #860000;
+}
+
+.selected-stroke-svg {
+    stroke: #860000;
+}
+

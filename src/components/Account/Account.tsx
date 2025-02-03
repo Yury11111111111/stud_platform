@@ -3,11 +3,11 @@ import home from "../../img/home.svg";
 import calendar from "../../img/calendar.svg";
 import foto from "./acakiy.jpg";
 
-import razbivki from "../../img/razbivki.svg";
-import tasks from "../../img/tasks.svg";
-import profile from "../../img/profile.svg";
-import lection from "../../img/lection.svg";
-import comands from "../../img/comands.svg";
+import Razbivki from "../../img/nav/Razbivki";
+import Tasks from "../../img/nav/Tasks";
+import Profile from '../../img/nav/Profile';
+import Lection from "../../img/nav/Lection";
+import Comands from "../../img/nav/Comands";
 
 import { Layout } from "antd";
 import { useState } from 'react';
@@ -158,11 +158,14 @@ export default function Account(): JSX.Element {
             <footer>
                 <nav>
                     <ul>
-                        <li><img src={razbivki} alt="razbivki" /> Разбивки</li>
-                        <li><img src={tasks} alt="tasks" />Задания</li>
-                        <li className='nav__selected'><img src={profile} alt="profile" />Профиль</li>
-                        <li><img src={lection} alt="lection" />Лекции</li>
-                        <li><img src={comands} alt="comands" />Команда</li>
+                        <li><Razbivki ClassName='' /> Разбивки</li>
+                        <li><Tasks ClassName='' />Задания</li>
+                        <li className='nav__selected'>
+                            <Profile ClassName='selected-fill-svg' />
+                            Профиль
+                        </li>
+                        <li><Lection ClassName='' />Лекции</li>
+                        <li><Comands ClassName='' />Команда</li>
                     </ul>
                 </nav>
             </footer>
