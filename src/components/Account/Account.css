@@ -1,197 +1,209 @@
 * {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 header {
-    margin: 5% 4%;
+  margin: 5% 4%;
 }
 
 .header__title {
-    display: inline;
-    font-family: "Inter", serif;
-    font-weight: 600;
-    font-size: medium;
+  display: inline;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: medium;
 }
 
 .header__home {
-    height: 3%;
-    position: absolute;
-    right: 4%;
+  height: 3%;
+  position: absolute;
+  right: 4%;
+}
+
+.header__button {
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .account-content {
-    height: 82vh;
-    margin: 0 4%;
-    font-family: "Montserrat", serif;
-    display: grid;
-    grid-template-rows: 30% 68%;
-    gap: 2%;
-    z-index: 100;
+  height: 80vh;
+  margin: 0 4%;
+  font-family: "Montserrat", serif;
+  display: grid;
+  grid-template-rows: 30% 68%;
+  gap: 2%;
+  z-index: 100;
 }
 
 .content__top {
-    border: solid 2px #860000;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
+  border: solid 2px #860000;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
 }
 
 .content__bottom {
-    border: solid 2px #860000;
-    border-radius: 25px;
+  border: solid 2px #860000;
+  border-radius: 25px;
 }
 
 .content__top-foto {
-    width: auto;
-    max-width: 50%;
-    height: auto;
-    max-height: 100%;
-    border-radius: 23px;
-    margin: 5%;
-    display: inline;
+  flex: 4;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 23px;
+  margin-left: 7%;
+  display: inline;
 }
 
 .content__top__info {
-    display: inline;
-    margin-left: 3%;
+  height: 90%;
+  flex: 7;
+  display: inline;
+  margin-left: 3%;
+  padding-left: 5%;
 }
 
 .content__top__info-name {
-    font-weight: 600;
-    font-size: x-large;
+  font-weight: 600;
+  font-size: large;
 }
 
 .content__top__info-faculty {
-    font-weight: 300;
-    font-size: larger;
+  font-weight: 300;
+  font-size: 20;
 }
 
 .content__top__info-strikes {
-    font-weight: 500;
-    font-size: larger;
-    color: #860000;
+  font-weight: 500;
+  font-size: 20;
+  color: #860000;
 }
 
 .content__bottom-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: larger;
-    margin: 4%;
+  text-align: center;
+  font-weight: 700;
+  font-size: larger;
+  margin: 4%;
 }
 
 .content__bottom-inline {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content__bottom-date {
-    color: #5B5B5B;
-    font-size: medium;
-    font-weight: 500;
-    margin-left: 4%;
+  color: #5b5b5b;
+  font-size: medium;
+  font-weight: 500;
+  margin-left: 4%;
 }
 
 .content__bottom-calendar-icon {
-    height: 3vh;
-    display: inline;
-    margin-right: 3%;
+  height: 3vh;
+  display: inline;
+  margin-right: 3%;
 }
 
 .content__bottom-weekday {
-    display: flex;
-    justify-content: space-between;
-    margin: 1% 4%;
-    font-weight: 500;
-    font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 4%;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .content__bottom-weekday-day {
-    text-align: center;
-    border: 1px solid transparent;
-    padding: 3% 4% 2% 4%;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 3%;
+  margin: 0 0.5%;
 }
 
 .content__bottom-weeksday-weekday {
-    font-weight: 400;
-    font-size: 8px;
+  font-weight: 400;
+  font-size: 8px;
 }
 
 .content__bottom-events {
-    margin: 0 4%;
+  margin: 0 4%;
 }
 
 .content__bottom-events-event {
-    display: flex;
-    font-weight: 500;
-    font-size: smaller;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 2%;
-    margin: 1% 0;
+  display: flex;
+  font-weight: 500;
+  font-size: smaller;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1% 0;
 }
 
 .content__bottom-events-event-time {
-    width: 20%;
+  width: 20%;
 }
 
 .color1 {
-    background-color: #9CB9E34D;
+  background-color: #9cb9e34d;
 }
 
 .color2 {
-    background-color: #8600005E;
+  background-color: #8600005e;
 }
 
 .color3 {
-    background-color: #E3CB9C4D;
+  background-color: #e3cb9c4d;
 }
 
 .color4 {
-    background-color: #CC9CE34D;
+  background-color: #cc9ce34d;
 }
 
 .color5 {
-    background-color: #78BC6C4D;
+  background-color: #78bc6c4d;
 }
 
 nav {
-    width: 90%;
+  width: 90%;
 }
 
 nav ul {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
-    font-size: 12px;
-    margin: 1% 0;
-    bottom: 0;
-    right: 5%;
-    left: 5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 1% 0;
+  bottom: 0;
+  right: 5%;
+  left: 5%;
 }
 
 li {
-    width: 15%;
-    text-align: center;
+  width: 15%;
+  text-align: center;
 }
 
 li img {
-    height: 60%;
+  height: 60%;
 }
 
 .nav__selected {
-    color: #860000;
+  color: #860000;
 }
 
 .svg {
-    height: 35px;
+  height: 35px;
 }
 
 .selected-fill-svg {
-    fill: #860000;
+  fill: #860000;
 }
 
 .selected-stroke-svg {
-    stroke: #860000;
+  stroke: #860000;
 }
-

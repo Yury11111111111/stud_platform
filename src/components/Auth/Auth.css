@@ -109,7 +109,7 @@ input {
     display: grid;
     font-weight: 800;
     width: 80%;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 
 button:active {
