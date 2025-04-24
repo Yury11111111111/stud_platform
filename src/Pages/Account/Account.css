@@ -167,43 +167,4 @@ header {
   background-color: #78bc6c4d;
 }
 
-nav {
-  width: 90%;
-}
 
-nav ul {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 500;
-  font-size: 12px;
-  margin: 1% 0;
-  bottom: 0;
-  right: 5%;
-  left: 5%;
-}
-
-li {
-  width: 15%;
-  text-align: center;
-}
-
-li img {
-  height: 60%;
-}
-
-.nav__selected {
-  color: #860000;
-}
-
-.svg {
-  height: 35px;
-}
-
-.selected-fill-svg {
-  fill: #860000;
-}
-
-.selected-stroke-svg {
-  stroke: #860000;
-}

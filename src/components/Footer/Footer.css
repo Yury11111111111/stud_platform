@@ -1,0 +1,47 @@
+nav {
+  width: 90%;
+}
+
+nav ul {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 9px;
+  margin: 1% 0;
+  bottom: 0;
+  right: 5%;
+  left: 5%;
+}
+
+li {
+  width: 16%;
+  text-align: center;
+}
+
+li img {
+  height: 60%;
+}
+.nav__selected {
+  color: #860000;
+}
+
+.svg {
+  height: 35px;
+}
+
+.selected-fill-svg {
+  fill: #860000;
+}
+
+.not_selected-fill-svg {
+  fill: #000000;
+}
+
+.selected-stroke-svg {
+  stroke: #860000;
+}
+
+.not_selected-stroke-svg {
+  stroke: #000000;
+}

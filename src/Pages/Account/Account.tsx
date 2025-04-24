@@ -3,15 +3,11 @@ import home from "../../img/home.svg";
 import calendar from "../../img/calendar.svg";
 import foto from "./acakiy.jpg";
 
-import Razbivki from "../../img/nav/Razbivki";
-import Tasks from "../../img/nav/Tasks";
-import Profile from "../../img/nav/Profile";
-import Lection from "../../img/nav/Lection";
-import Comands from "../../img/nav/Comands";
-
 import { Layout } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Footer from "../../components/Footer/Footer";
+import Calendar from "../../components/Calendar/Calendar";
 
 const { Content } = Layout;
 
@@ -88,6 +84,8 @@ const highlightedButtonStyle: React.CSSProperties = {
 const colors: string[] = ["color1", "color2", "color3", "color4", "color5"];
 
 export default function Account(): JSX.Element {
+  const [calendarOpen, setCalendarOpen] = useState(false);
+
   const navigate = useNavigate();
 
   const [highlightedButton, setHighlightedButton] =
@@ -98,7 +96,9 @@ export default function Account(): JSX.Element {
     return colors[randomIndex];
   };
 
-  return (
+  return calendarOpen ? (
+    <Calendar setCalendarOpen={setCalendarOpen}/>
+  ) : (
     <div>
       <header>
         <h6 className="header__title">ЛИЧНЫЙ КАБИНЕТ</h6>
@@ -131,6 +131,7 @@ export default function Account(): JSX.Element {
               className="content__bottom-calendar-icon"
               src={calendar}
               alt="calendar"
+              onClick={() => setCalendarOpen(true)}
             />
           </div>
           <div className="content__bottom-weekday">
@@ -170,31 +171,7 @@ export default function Account(): JSX.Element {
           </div>
         </div>
       </Content>
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <Razbivki ClassName="" /> Разбивки
-            </li>
-            <li>
-              <Tasks ClassName="" />
-              Задания
-            </li>
-            <li className="nav__selected">
-              <Profile ClassName="selected-fill-svg" />
-              Профиль
-            </li>
-            <li>
-              <Lection ClassName="" />
-              Лекции
-            </li>
-            <li>
-              <Comands ClassName="" />
-              Команда
-            </li>
-          </ul>
-        </nav>
-      </footer>
+      <Footer currentPage={3} />
     </div>
   );
 }

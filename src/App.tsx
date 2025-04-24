@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthContext } from './context/AuthContext';
-import Auth from './components/Auth/Auth';
-import Account from './components/Account/Account';
-import NotFound from './components/NotFound/NotFound';
+import Auth from './Pages/Auth/Auth';
+import Account from './Pages/Account/Account';
+import NotFound from './Pages/NotFound/NotFound';
 import './App.css';
 
 function App() {
